@@ -1,0 +1,28 @@
+body {
+    background-image: url(/src/images/flowers-bouquet.jpeg);
+}
+.conteiner {
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+
+}
+
+.delet {
+        background: #dda6ca;
+        border: 2px solid #dda6ca;
+        border-radius: 4px;
+        width: auto;
+        height: 35px;
+        font-family: 'Times New Roman', Times, serif, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 18px;
+        text-align: center;
+        color: black;
+    
+
+}

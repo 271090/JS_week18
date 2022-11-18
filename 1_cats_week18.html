@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/1_cats_week18.css">
     <title>Document</title>
 </head>
+
 <body>
     <h1> Расскажи мне о своём котике </h1>
-    <img src="https://www.meme-arsenal.com/memes/69b6de31e2ec5cbcfcce44a1e104299a.jpg" alt="котик из Шрека">
-    <fieldset>
-        <legend> Имя </legend>
-        <p>
-            <div>
-                <label for="name"> Кличка питомца </label>
-                <input type="text" id="name" required/>
-        </p>
-        </div>
-        <p></p>
+
+    <fieldset class="about_people">
+        <legend> Давай знакомится: </legend>
+
         <div>
             <label for="fio"> Имя владельца </label>
-            <input type="text" id="fio" required></input></p>
+            <input type="text" id="fio" name="fio" placeholder="Имя владельца" required />
         </div>
-        <p></p>
         <div>
             <label for="telefon"> Номер телефона владельца </label>
-            <input type="tel" id="telefon" placeholder="Телефон"
-                pattern="/^\+?(\d{1,3})?[- .]?\(?(?:\d{2,3})\)?[- .]?\d\d\d[- .]?\d\d\d\d$/" minlength="10"
-                maxlength="20"/></div>
-        </p>
-    </fieldset>
-    <p>
+            <input type="tel" id="telefon" name="telefon" placeholder="Телефон" pattern="\+\d{11}" minlength="11"
+                maxlength="12" /></div>
         <div>
-            <label for="breed"> Порода вашего питомца: </label><br/>
+        </div>
+    </fieldset>
+    <fieldset class="about_cat">
+        <legend> Информация о котике: </legend>
+        <div>
+            <label for="name"> Кличка питомца </label>
+            <input type="text" id="name" name="name" placeholder="Кличка питомца" required />
+        </div>
+        <div>
+            <label for="breed"> Порода вашего питомца: </label><br />
             <select id="breed">
                 <option value="first option"> Британец</option>
                 <option value="second option"> Сиамский</option>
@@ -41,34 +42,35 @@
                 <option value="fifth option"> Другая </option>
             </select>
         </div>
-    </p>
-    <p>
-        <div>
-            <label for="eat"> Чем питается: </label><br />
-            <input type="checkbox" id="eat"> сухой корм </input><br />
-            <input type="checkbox" id="eat"> влажный корм </input><br />
-            <input type="checkbox" id="eat"> натуральный корм </input><br />
-        </div>
-    </p>
-    <p>
-        <div>
-            <label for="sex"> Пол вашего питомца </label><br />
-            Самка <input type="radio" name="sex" /> <br /> Самец <input type="radio" name="sex" />
-        </div>
-    </p>
-    <p>
-        <div>
-            <label for="comments">Комментарии владельца:</label> <br />
-            <textarea name="comments" id="comments" rows="10"
-                cols="30"> Если вы хотите рассказать что-то важное о вашем котике, пишите здесь</textarea>
-        </div>
-    </p>
-    <p>
-        <div>
-            <label for="foto"> Добавьте фото вашего питомца </label>
-            <input type="file" id="foto"/></input>
-        </div>
-    </p>
+    
+
+    <div>
+        <label for="eat"> Чем питается: </label><br />
+        <input type="checkbox" id="eat"> сухой корм </input><br />
+        <input type="checkbox" id="eat"> влажный корм </input><br />
+        <input type="checkbox" id="eat"> натуральный корм </input><br />
+    </div>
+
+
+    <div>
+        <label for="sex"> Пол вашего питомца </label><br />
+        Самка <input type="radio" name="sex" /> <br /> Самец <input type="radio" name="sex" />
+    </div>
+
+
+    <div>
+        <label for="comments">Комментарии владельца:</label> <br />
+        <textarea name="comments" id="comments" rows="10"
+            cols="30"> Если вы хотите рассказать что-то важное о вашем котике, пишите здесь</textarea>
+    </div>
+</fieldset>
+
+    <div>
+        <label for="foto"> Добавьте фото вашего питомца </label>
+        <input type="file" id="foto" name="foto" required />
+    </div>
+
     <button type="button" id="button"> Сохранить </button>
 </body>
+
 </html>

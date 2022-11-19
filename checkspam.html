@@ -10,13 +10,28 @@
 </head>
 
 <body>
-    <div class="comment">
-        <p id="conteiner"></p>
-        <input type="text" id="newComment">
-        <button type="button" class="button" onclick="addComment()">Добавить комментарий</button>
+    <div class="conteiner">
+        <h1>Давай знакомиться</h1>
+        <div class="plus">Первый шаг: выбираем аватар<br/>
+            <img src="https://cdn-icons-png.flaticon.com/512/6997/6997660.png" id="ava" alt="ava1" width="60px">
+            <img src="https://cdn-icons-png.flaticon.com/512/6998/6998058.png" id="ava" alt="ava2" width="60px">
+            <img src="https://cdn-icons-png.flaticon.com/512/4113/4113023.png" id="ava" alt="ava3" width="60px">
+            <img src="https://cdn-icons-png.flaticon.com/512/1459/1459666.png" id="ava" alt="ava4" width="60px">
+        </div>
+        <form class="form">
+            <div class="plus">Второй шаг: пишем ваше имя
+                <br><input type="text" id="name" placeholder="Введите ваше имя">
+            </div>
+            <div>
+                <button type="button" id="save">Запомнить</button>
+                <button type="button" id="unsave">Не запоминать</button>
+            </div>
+            <div class="comment">
+                <p id="conteiner"></p>
+                <input type="text" id="newComment">
+                <button type="button" class="button" onclick="addComment()">Добавить комментарий</button>
+            </div>
     </div>
-
-
     <script src="/src/scripts/checkspam.js"></script>
 </body>
 

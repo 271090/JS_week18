@@ -176,3 +176,8 @@
     text-align: right;
   }
   
+  #errorsInfo {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+  }
